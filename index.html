@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style1.css">
     <title>Document</title>
+
+
 </head>
-<body>
-    <h1>Hello world</h1>
-    <h2>Manzoor jamali</h2>
+<body  > 
+ <div class="container mb-3 mt-3" >
+  <div class="my">
+ 
+  
+    <table class=" table">
+       <th ><h1>Contact </h1></th>
+      <tr>
+        <td>
+           <label for="Name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="mail" placeholder="Enter email" >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="subject">Subject:</label>
+          <input type="text" class="form-control" id="sub" placeholder="Enter subject" >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          
+          <label for="comment">Comments:</label>
+           <textarea class="form-control" rows="5" id="comment" name="text"></textarea>   
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <input type="button"class= 'btn btn-primary btn-sm' value="Check"  onclick= "sendemail()" style="width: 100%;"></td> 
+      </tr>
+    </div> 
+  </table>
+  </div>
+  </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="app.js"></script>
+   
 </body>
 </html>
